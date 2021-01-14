@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:background="@drawable/fundo1"
+        android:layout_height="match_parent"
+        tools:context=".CadastroActivity">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crie sua Conta"
+            android:layout_marginTop="20sp"
+            android:textColor="#000000"
+            android:textSize="25sp"
+
+            android:fontFamily="sans-serif-black"
+            android:layout_gravity="center_horizontal"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="3dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20sp"
+                android:padding="20dp"
+                android:background="#fff"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txt_nomeRespc"
+                    android:layout_width="242dp"
+                    android:layout_height="45dp"
+                    android:textColor="@android:color/black"
+                    android:hint="Nome do Responsável"
+                    android:textColorHint="#777070"
+                    android:textSize="14sp"
+                    android:paddingStart="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+                    android:inputType="text"
+                    android:background="@drawable/caixa"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/txt_nomeAlupc"
+                    android:layout_width="242dp"
+                    android:layout_height="45dp"
+                    android:textColor="@android:color/black"
+                    android:hint="Nome completo do Aluno"
+                    android:textColorHint="#777070"
+                    android:textSize="14sp"
+                    android:paddingStart="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+                    android:inputType="text"
+                    android:background="@drawable/caixa"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/txt_emailc"
+                    android:layout_width="242dp"
+                    android:layout_height="45dp"
+                    android:textColor="@android:color/black"
+                    android:hint="Email "
+                    android:textColorHint="#777070"
+
+                    android:inputType="textEmailAddress"
+                    android:textSize="14sp"
+                    android:paddingStart="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+
+                    android:background="@drawable/caixa"
+                    />
+                <EditText
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/txt_phonec"
+                    android:layout_width="242dp"
+                    android:layout_height="45dp"
+                    android:textColor="@android:color/black"
+                    android:hint="(XX) XXXXX-XXXX"
+                    android:textColorHint="#777070"
+
+                    android:inputType="phone"
+                    android:textSize="14sp"
+                    android:paddingStart="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+
+                    android:background="@drawable/caixa"
+                    />
+                <EditText
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/txt_endereco"
+                    android:layout_width="242dp"
+                    android:layout_height="45dp"
+                    android:textColor="@android:color/black"
+                    android:hint="Endereço"
+                    android:textColorHint="#777070"
+
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    android:paddingStart="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+
+                    android:background="@drawable/caixa"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selecione a turma do Aluno:"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="17sp"/>
+                <RadioGroup
+                    android:id="@+id/radioGrouptipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/maternalRb"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maternal"
+                        android:textColor="#000"
+                        android:buttonTint="@color/colorPrimary"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/primeiroPeriodoRb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1º Periodo"
+
+                        android:textColor="#000"
+                        android:buttonTint="@color/colorPrimary"
+
+                        />
+
+
+
+                    <RadioButton
+                        android:id="@+id/segundoPeriodoRb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2º Periodo"
+                        android:textColor="#000"
+                        android:buttonTint="@color/colorPrimary"
+
+                        />
+                    <RadioButton
+                        android:id="@+id/primeiroAnoRb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1º Ano"
+                        android:maxLines="1"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#000"
+                        android:buttonTint="@color/colorPrimary"
+
+                        />
+
+
+
+                    <RadioButton
+                        android:id="@+id/segundoAnoRb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2º Ano"
+                        android:textColor="#000"
+                        android:buttonTint="@color/colorPrimary"
+
+                        />
+                    <RadioButton
+                        android:id="@+id/terceiroAnoRb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3º Ano"
+                        android:textColor="#000"
+                        android:buttonTint="@color/colorPrimary"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/quartoAnoRb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4º Ano"
+                        android:textColor="#000"
+                        android:buttonTint="@color/colorPrimary"
+
+                        />
+                    <RadioButton
+                        android:id="@+id/quintoAnoRb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5º Ano"
+                        android:textColor="#000"
+                        android:buttonTint="@color/colorPrimary"
+
+                        />
+
+
+
+
+
+                </RadioGroup>
+
+
+
+                <EditText
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/txt_senhac"
+                    android:layout_width="242dp"
+                    android:layout_height="45dp"
+                    android:textColor="@android:color/black"
+                    android:hint="Senha"
+                    android:textColorHint="#777070"
+
+                    android:inputType="textPassword"
+                    android:textSize="14sp"
+                    android:paddingStart="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+
+                    android:background="@drawable/caixa"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_cadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao2"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:text="Cadastrar"/>
+
+
+    </LinearLayout>
+</ScrollView>
+
